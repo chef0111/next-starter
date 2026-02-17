@@ -173,7 +173,7 @@ function FormExample() {
 
   return (
     <Example title="Form">
-      <Card className="w-full max-w-md">
+      <Card className="bg-card w-full max-w-md">
         <CardHeader>
           <CardTitle>User Information</CardTitle>
           <CardDescription>Please fill in your details below</CardDescription>
