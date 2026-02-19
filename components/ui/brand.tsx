@@ -1,13 +1,14 @@
 import Link from 'next/link';
 import { Route } from 'next';
 import { cn } from '@/lib/utils';
-import { LogoIcon } from '../logo';
+import { LogoIcon } from './logo';
 
 interface BrandProps {
   href?: Route | null;
   showText?: boolean;
   size?: number;
   className?: string;
+  containerClassName?: string;
   textClassName?: string;
 }
 
@@ -16,11 +17,17 @@ export function Brand({
   showText = true,
   size = 16,
   className,
+  containerClassName,
   textClassName,
 }: BrandProps) {
   const content = (
-    <div className={cn('flex items-center justify-center gap-2', className)}>
-      <div className="bg-primary rounded-md p-2">
+    <div
+      className={cn(
+        'flex items-center justify-center gap-2',
+        containerClassName
+      )}
+    >
+      <div className={cn('bg-primary rounded-md p-2', className)}>
         <LogoIcon width={size} height={size} className="invert dark:invert-0" />
       </div>
       {showText && (

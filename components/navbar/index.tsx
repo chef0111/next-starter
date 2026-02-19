@@ -3,9 +3,11 @@
 import { cn } from '@/lib/utils';
 import { useScroll } from '@/hooks/use-scroll';
 import { Button } from '@/components/ui/button';
-import ThemeToggle from './theme-toggle';
-import { GithubIcon } from './icons/github';
-import { Brand } from './ui/brand';
+import ThemeToggle from '@/components/ui/theme-toggle';
+import { GithubIcon } from '@/components/icons/github';
+import { Brand } from '@/components/ui/brand';
+import { DesktopNav } from './desktop-nav';
+import { MobileNav } from './mobile-nav';
 
 export const navLinks = [
   {
@@ -32,16 +34,20 @@ export function Header() {
           scrolled,
       })}
     >
-      <nav className="mx-auto flex h-16 w-full max-w-5xl items-center justify-between px-4">
-        <Brand />
+      <nav className="mx-auto flex h-14 w-full max-w-5xl items-center justify-between px-4">
+        <div className="flex items-center gap-5">
+          <Brand href="/" />
+          <DesktopNav />
+        </div>
         <div className="flex items-center gap-2">
           <Button size="icon" variant="ghost">
-            <a href="" target="_blank">
+            <a href="https://github.com/chef0111/next-starter" target="_blank">
               <GithubIcon />
             </a>
           </Button>
           <ThemeToggle />
         </div>
+        <MobileNav />
       </nav>
     </header>
   );

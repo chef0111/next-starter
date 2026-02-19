@@ -1,11 +1,9 @@
-import { ComponentExample } from '@/components/component-example';
-import { Header } from '@/components/header';
+import { Header } from '@/components/navbar';
 
 export default function Page() {
   return (
     <>
       <Header />
-      <ComponentExample />
     </>
   );
 }
