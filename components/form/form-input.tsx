@@ -78,7 +78,7 @@ export const FormInputGroup: FormControlFn<
     >
       {(field) => (
         <>
-          <InputGroup className="base-input min-h-10!">
+          <InputGroup className="min-h-10!">
             {leftAddon && <InputGroupAddon>{leftAddon}</InputGroupAddon>}
             <InputGroupInput {...field} {...inputProps} />
             {rightAddon && (

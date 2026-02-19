@@ -158,3 +158,11 @@
 @utility no-focus {
   @apply focus-visible:border-none! focus-visible:ring-0! focus-visible:ring-transparent! focus-visible:ring-offset-0! focus-visible:outline-none!;
 }
+
+@utility input-otp-slot {
+  @apply size-14! text-xl! sm:size-12! sm:text-2xl!;
+}
+
+@utility input-otp-group {
+  @apply w-full gap-2 *:data-[slot=input-otp-slot]:rounded-md *:data-[slot=input-otp-slot]:border;
+}

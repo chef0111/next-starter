@@ -79,15 +79,13 @@ export function FormBase<
       name={name}
       render={({ field, fieldState }) => {
         const labelElement = label && (
-          <div className="flex-between w-full">
+          <div className="flex w-full items-center justify-between">
             <FieldLabel htmlFor={field.name}>{label}</FieldLabel>
             {labelAction}
           </div>
         );
         const descElement = description && (
-          <FieldDescription className="body-regular text-light-500">
-            {description}
-          </FieldDescription>
+          <FieldDescription>{description}</FieldDescription>
         );
 
         const control = children({

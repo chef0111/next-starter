@@ -78,7 +78,7 @@ export const FormTextareaGroup: FormControlFn<
     >
       {(field) => (
         <>
-          <InputGroup className="base-input">
+          <InputGroup>
             {leftAddon && <InputGroupAddon>{leftAddon}</InputGroupAddon>}
             <InputGroupTextarea {...field} {...textareaProps} />
             {rightAddon && (
