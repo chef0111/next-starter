@@ -1,6 +1,7 @@
+import { Header } from '@/components/navbar';
 import { HeroSection } from '@/components/hero';
 import { LogosSection } from '@/components/hero/logos-section';
-import { Header } from '@/components/navbar';
+import IntegrationsSection from '@/components/integration';
 import { cn } from '@/lib/utils';
 
 export default function Page() {
@@ -17,6 +18,7 @@ export default function Page() {
       >
         <HeroSection />
         <LogosSection />
+        <IntegrationsSection />
       </main>
     </div>
   );

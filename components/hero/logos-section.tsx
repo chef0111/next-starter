@@ -4,7 +4,7 @@ import { LogoCloud } from './logo-cloud';
 
 export function LogosSection() {
   return (
-    <section className="mb-12">
+    <section>
       <h2 className="text-muted-foreground py-6 text-center text-lg font-medium tracking-tight md:text-xl">
         Trusted by <span className="text-foreground">experts</span>
       </h2>

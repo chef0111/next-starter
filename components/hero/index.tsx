@@ -4,6 +4,7 @@ import { FullWidthDivider } from '@/components/ui/full-width-divider';
 import { Button } from '@/components/ui/button';
 import { ArrowRightIcon, PhoneCallIcon } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export function HeroSection() {
   return (
@@ -26,12 +27,12 @@ export function HeroSection() {
           <div className="via-border/50 to-border/50 absolute inset-y-0 left-8 w-px bg-linear-to-b from-transparent md:left-12" />
           <div className="via-border/50 to-border/50 absolute inset-y-0 right-8 w-px bg-linear-to-b from-transparent md:right-12" />
         </div>
-        <a
+        <Link
           className={cn(
             'group bg-card mx-auto flex w-fit items-center gap-3 rounded-sm border p-1 shadow',
             'fade-in slide-in-from-bottom-10 animate-in fill-mode-backwards transition-all delay-500 duration-500 ease-out'
           )}
-          href="#link"
+          href="#"
         >
           <div className="bg-card rounded-xs border px-1.5 py-0.5 shadow-sm">
             <p className="font-mono text-xs">NOW</p>
@@ -43,7 +44,7 @@ export function HeroSection() {
           <div className="pr-1">
             <ArrowRightIcon className="size-3 -translate-x-0.5 duration-150 ease-out group-hover:translate-x-0.5" />
           </div>
-        </a>
+        </Link>
 
         <h1
           className={cn(
